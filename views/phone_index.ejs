@@ -1,0 +1,37 @@
+<%- include ("partials/phone_header") %>
+<div class="ui main text container" style=" margin-top:7.0em;">
+    <div class="ui huge header">Phone Book App</div>
+    <div class="ui top attached segment">
+        <div class="ui divided items">
+            <% phones.forEach((phone)=>{ %>
+                <div class="item">
+                 <div class="content">
+                    <img src="<%= phone.name %>" >
+                 </div>
+                 <div class="content">
+                    <img src="<%= phone.DOB %>" >
+                 </div>
+                 <div class="content">
+                    <img src="<%= phone.Phone_NO %>" >
+                 </div>
+                 <div class="content">
+                    <img src="<%= phone.email %>" >
+                 </div>
+               
+                    </div>
+                 </div>
+                </div>
+                
+               
+              
+              
+                <a href="blog/<%=blog._id %>">ReadMore</a>
+            <% });%>
+        </div>
+    </div>
+</div>
+<!-- <div style=" margin-top:7.0em;"> -->
+<!-- <h1>Hello and welcome to blog index route</h1> -->
+
+<%- include ("partials/phone_footer") %>
+<!-- </div> -->

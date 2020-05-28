@@ -1,0 +1,26 @@
+<%- include ("partials/phone_header") %>
+<div class="ui main text container segment" style="margin-top:7.0em;" >
+    
+    <div class="ui huge header"> Edit Phone Book</div>
+    <form class="ui form" action="/blog/<%= blog._id %>?_method=PUT" method="POST">
+        <div class="field">
+            <label>Name</label>
+            <input type="text" name="phone[name]" value="<%= phone.name %>">
+        </div>
+      <div class="field">
+          <label> DOB </label>
+              <input type="text" name="phone[DOB]" value="<%= phone.DOB %>"> 
+      </div>
+       <div class="field"> 
+           <label>Mobile Number</label>
+           <input type="text" name="phone[Phone_NO]" value="<%= phone.Phone_NO %>">
+       </div>
+       <div class="field"> 
+        <label>Email</label>
+        <input type="text" name="phone[email]" value="<%= phone.email %>">
+    </div>
+       
+        <button type="submit" class="ui basic violet big basic button">Submit</button>
+    </form>
+</div>
+<%- include ("partials/phone_footer") %>

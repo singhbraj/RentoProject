@@ -1,0 +1,29 @@
+<%- include ("partials/phone_header") %>
+<div class="ui main text container segment" style="margin-top:7.0em;" >
+    
+    <div class="ui huge header">Welcome</div>
+    <div class="ui top attached segment">
+            
+        <div class="description ">
+            <p><%- phone.name %></p> 
+        </div>
+      
+            <div class="description ">
+                <p><%- phone.DOB %></p> 
+            </div>
+            <div class="description ">
+                <p><%- Phone.NO %></p> 
+            </div>
+            <div class="description ">
+                <p><%- phone.email %></p> 
+            </div>
+            <div>
+                <a class="ui orange basic button" href="/blog/<%= blog._id %>/edit">Edit</a>
+                <form action="/phone/<%= phone._id %>?_method=DELETE" method="POST" style="display: inline;">
+                    <button class="ui red basic button">Delete</button>
+                </form>
+            </div>
+        </div>
+    </div>
+   
+</div>

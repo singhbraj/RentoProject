@@ -1,0 +1,25 @@
+<%- include ("partials/phone_header") %>
+<div class="ui main text container segment" style="margin-top:7.0em;" >
+    
+    <div class="ui huge header"><i class="left Arrow"></i>Add New Contect</div>
+    <form class="ui form" action="/phone" method="Post">
+        <div class="field">
+            <label>Name</label>
+            <input type="text" name="phone[name]" placeholder="name">
+        </div>
+      <div class="field">
+          <label> DOB </label>
+              <input type="text" name="phone[DOB]" placeholder="dd/mm/yyyy"> 
+      </div>
+       <div class="field"> 
+           <label>Mobile Number</label>
+           <input type="text" name=phone[Phone_NO] placeholder="+91XXXXXXXXXX">
+       </div>
+       <div class="field"> 
+        <label>Email</label>
+        <input type="email" name=phone[email] placeholder="abc@gmail.com">
+       </div>
+        <button type="submit" class="ui basic violet big basic button"> Save </button>
+    </form>
+</div>
+<%- include ("partials/phone_footer") %>
